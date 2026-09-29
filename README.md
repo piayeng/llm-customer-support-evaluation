@@ -9,14 +9,14 @@ support agent using promptfoo.
 - Tone and professionalism
 
 ## How to run
-npm install -g promptfoo   # or use npx
-export OPEN_API_KEY=your_key
-npx promptfoo eval
-npx promptfoo view
+- npm install -g promptfoo   # or use npx
+- export OPEN_API_KEY=your_key
+- npx promptfoo eval
+- npx promptfoo view
 
 ## Results
-openai:gpt-4o-mini
-80.95% passing (17/21 cases)
+- openai:gpt-4o-mini
+- 80.95% passing (17/21 cases)
 
 ## What I learned
 - LLM outputs are non-deterministic, so assertions need to allow variation
