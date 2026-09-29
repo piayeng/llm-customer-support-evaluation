@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+#yaml
+description: MyShop support eval
+
+prompts:
+  - file://prompts/support.txt
+ 
+providers:
+  - openai:gpt-4o-mini
+
+tests: file://tests.yaml
