@@ -156,3 +156,11 @@
     assert:
       - type: llm-rubric
         value: "Responds warmly and briefly without being overly effusive or off-topic"
+
+  # - ── Miscellaneous edge cases ──
+  - description: "Customer asks for policy in a different language" 
+    vars:
+      message: "¿Cuál es su política de devoluciones?"
+    assert:
+      - type: llm-rubric
+        value: "Responds in the same language or politely asks if they prefer English, without fabricating a translation"
