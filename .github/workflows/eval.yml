@@ -8,6 +8,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - run: npx promptfoo eval --output results.json
+      - run: cd support-eval && npx promptfoo eval --output results.json
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
