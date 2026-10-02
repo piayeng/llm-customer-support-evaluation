@@ -165,7 +165,7 @@
       - type: llm-rubric
         value: "Responds in the same language or politely asks if they prefer English, without fabricating a translation"
   
-  # another edge case where the customer asks for a refund on a non-returnable item
+  # another edge case where the customer asks for a refund on a non-returnable itemgit commit -m "Add test case: exchange policy hallucination check"
   - description: "Customer asks for a refund on a non-returnable item"
     vars:
       message: "I want to return this gift card I bought last week."
