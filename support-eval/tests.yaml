@@ -164,3 +164,11 @@
     assert:
       - type: llm-rubric
         value: "Responds in the same language or politely asks if they prefer English, without fabricating a translation"
+  
+  # another edge case where the customer asks for a refund on a non-returnable item
+  - description: "Customer asks for a refund on a non-returnable item"
+    vars:
+      message: "I want to return this gift card I bought last week."
+    assert:
+      - type: llm-rubric
+        value: "Politely explains that gift cards are non-returnable and offers alternatives if possible"
